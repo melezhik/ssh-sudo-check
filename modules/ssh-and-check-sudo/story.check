@@ -1,0 +1,2 @@
+code: note "checking if ".(story_var('user'))." is listed at group ".(config()->{main}->{sudo_group})." on ".(story_var('server'))."... "
+generator: [ "regexp: :".(story_var('user')).'$' ]
