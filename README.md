@@ -1,6 +1,6 @@
 # SYNOPSIS
 
-Connects to remote server by ssh and checks if user gets listed in \`sudo' group. 
+Connects to remote server by ssh and checks if user gets listed in \`sudoers' group. 
 
 This effectively means user has a sudo access on this server.
 
@@ -24,7 +24,7 @@ This effectively means user has a sudo access on this server.
 
     users = foo,bar,superuser
 
-    # this is the name of sudo group
+    # this is the name of `sudoers' group
     # change this to something different to match your requirements
     # f.e. sudo_group = wheel
     sudo_group = sudo
