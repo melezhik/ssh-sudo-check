@@ -1,2 +1,8 @@
 code: note "checking if ".(story_var('user'))." is listed at group ".(config()->{main}->{sudo_group})." on ".(story_var('server'))."... "
-generator: [ "regexp: :".(story_var('user')).'$' ]
+
+generator: \
+if ( story_var('user') eq 'root' ){ \
+  [ 'validator: [ 1, qq{root has sudo access}  ]' ]  \
+}else{  \
+  [ "regexp: \\b".(config()->{main}->{sudo_group}).'\\b' ] \
+}
