@@ -31,7 +31,7 @@ This effectively means user has a sudo access on this server.
 
 # Setting parameters on runtime
 
-    $ sparrow check run cluster check-sudoers --param main.servers=192.168.0.1,192.168.0.2 --param main.users=foo,bar --param main.sudo_group=wheel
+    $ sparrow check run cluster check-sudoers --param servers=192.168.0.1,192.168.0.2 --param users=foo,bar --param sudo_group=wheel
  
 # AUTHOR
 
