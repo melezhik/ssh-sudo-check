@@ -1,5 +1,5 @@
-my $servers = config()->{main}->{servers};
-my $users   = config()->{main}->{users};
+my $servers = config()->{servers};
+my $users   = config()->{users};
 
 for my $s (split /,/, $servers){
   for my $u (split /,/, $users){

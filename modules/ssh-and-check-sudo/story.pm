@@ -1,4 +1,4 @@
-my $ssh_command = config()->{main}->{ssh_command};
+my $ssh_command = config()->{ssh_command};
 my $server = story_var('server');
 my $user = story_var('user');
 

@@ -17,8 +17,6 @@ This effectively means user has a sudo access on this server.
     $ sparrow check set cluster check-sudoers  ssh-sudo-check
     $ sparrow check ini cluster check-sudoers
 
-    [main]
-
     servers = 127.0.0.1,foo.bar.baz,192.168.0.0.1
     ssh_command = ssh -l foo -i ~/my_key.pem 
 
