@@ -13,9 +13,8 @@ This effectively means user has a sudo access on this server.
 
 
     $ sparrow project create cluster
-    $ sparrow check add cluster check-sudoers
-    $ sparrow check set cluster check-sudoers  ssh-sudo-check
-    $ sparrow check ini cluster check-sudoers
+    $ sparrow task add cluster sudoers ssh-sudo-check
+    $ sparrow task ini cluster sudoers
 
     servers = 127.0.0.1,foo.bar.baz,192.168.0.0.1
     ssh_command = ssh -l foo -i ~/my_key.pem 
@@ -27,11 +26,11 @@ This effectively means user has a sudo access on this server.
     # f.e. sudo_group = wheel
     sudo_group = sudo
 
-    $ sparrow check run cluster check-sudoers
+    $ sparrow task run cluster sudoers
 
-# Setting parameters on runtime
+# Setting parameters in runtime
 
-    $ sparrow check run cluster check-sudoers --param servers=192.168.0.1,192.168.0.2 --param users=foo,bar --param sudo_group=wheel
+    $ sparrow task run cluster sudoers --param servers=192.168.0.1,192.168.0.2 --param users=foo,bar --param sudo_group=wheel
  
 # AUTHOR
 
