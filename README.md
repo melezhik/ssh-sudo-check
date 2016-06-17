@@ -30,7 +30,8 @@ This effectively means user has a sudo access on this server.
 
 # Setting parameters in runtime
 
-    $ sparrow task run cluster sudoers --param servers=192.168.0.1,192.168.0.2 --param users=foo,bar --param sudo_group=wheel
+    $ sparrow task run cluster sudoers --param servers=192.168.0.1,192.168.0.2 \
+    --param users=foo,bar --param sudo_group=wheel
  
 # AUTHOR
 
